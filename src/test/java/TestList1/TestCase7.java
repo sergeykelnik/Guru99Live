@@ -34,7 +34,7 @@ public class TestCase7 {
 
     @Test(priority = 11)
     public void ParseCSV() {
-        String csvFile = "C:\\Users\\Sergey Kelnik\\Downloads\\orders.csv";
+        String csvFile = "D:\\Downloads\\orders.csv";
 
         CSVReader reader = null;
         try {

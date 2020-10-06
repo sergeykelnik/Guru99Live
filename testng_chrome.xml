@@ -5,14 +5,13 @@
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="TestList1.Config"/>
-            <!-- Suite -->
-     <!--       <class name="TestList1.TestCase1"/>
-            <class name="TestList1.TestCase2"/>
+            <class name="TestList1.TestCase1"/>
+            <!--<class name="TestList1.TestCase2"/>
             <class name="TestList1.TestCase3"/>
             <class name="TestList1.TestCase4"/>
             <class name="TestList1.TestCase5"/>
-            <class name="TestList1.TestCase6"/>-->
-            <class name="TestList1.TestCase7"/>
+            <class name="TestList1.TestCase6"/>
+            <class name="TestList1.TestCase7"/>-->
         </classes>
     </test>
 </suite>

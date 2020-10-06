@@ -2,6 +2,7 @@ package TestList1;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -9,12 +10,8 @@ import org.testng.annotations.Parameters;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
-import javax.mail.*;
-import javax.mail.internet.*;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import javax.jms.Message;
+import javax.jms.Session;
 import java.util.Properties;
 
 
@@ -33,6 +30,7 @@ public class Config {
         // Check if parameter passed as 'chrome'
         else if (browser.equalsIgnoreCase("chrome")) {
             // create chrome instance
+            WebDriverManager.chromedriver().version("85").setup();
             Configuration.browser = System.getProperty("browser", WebDriverRunner.CHROME);
             Configuration.startMaximized = true;
         }
@@ -77,7 +75,7 @@ public class Config {
             multipart.addBodyPart(objMessageBodyPart);
             objMessageBodyPart = new MimeBodyPart();
 //Set path to the pdf report file
-            String filename = "D:\\IDEA_workspace\\HaldexUITests\\Test.pdf";
+            String filename = "src\\Test.pdf";
             //Create data source to attach the file in mail
             DataSource source = new FileDataSource(filename);
             objMessageBodyPart.setDataHandler(new DataHandler(source));
@@ -96,8 +94,8 @@ public class Config {
     }
 
     // After complete execution send pdf report by email
-   // @AfterSuite
-    /*public void SendMail() {
-        sendPDFReportByGMail("gigamonsterrr@gmail.com", "fymgbakfzxfsmqsy", "gigamonsterrr@gmail.com", "CSV Report", "");
-    }*/
+    @AfterSuite
+    public void SendMail() {
+        sendPDFReportByGMail("gigamonsterrr@gmail.com", "vvzoibuzinpbodwx", "gigamonsterrr@gmail.com", "CSV Report", "");
+    }
 }
