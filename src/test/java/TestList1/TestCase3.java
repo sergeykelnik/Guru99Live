@@ -1,22 +1,16 @@
 package TestList1;
 
-import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
-//Add listener for pdf report generation
-@Listeners(JyperionListener.class)
-//@Listeners(CustomReporting.class)
-public class TestCase3 {
+
+public class TestCase3 extends BaseTest {
 
     @Test(priority = 3)
     public void AddProductsToBasket() {
-        Selenide.clearBrowserCookies();
-        open("http://live.guru99.com/");
+
         $(By.linkText("MOBILE")).click();
         $(By.xpath("//ul[@class='products-grid products-grid--max-4-col first last odd']//li[1]//div[1]//div[3]//button[1]"))
                 .click();

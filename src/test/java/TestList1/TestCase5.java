@@ -1,9 +1,11 @@
 package TestList1;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.text.NumberFormat;
@@ -16,21 +18,15 @@ import static com.codeborne.selenide.Selectors.byTitle;
 import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-//Add listener for pdf report generation
-@Listeners(JyperionListener.class)
-//@Listeners(CustomReporting.class)
+
 public class TestCase5 {
-   /* @BeforeClass
-    public void setUp() {
-        System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-        System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
-        System.setProperty("webdriver.edge.driver", "C:\\MicrosoftWebDriver.exe");
-        Configuration.browser = "chrome";
-        //Configuration.headless = true;
-        Configuration.baseUrl = "http://localhost:8080";
-        Configuration.startMaximized = true;
-}*/
+
+    @BeforeClass
+    public void setup() {
+        WebDriverManager.chromedriver().version("85").setup();
+        Configuration.browserSize = "1920x1080";
+    }
+
     // Random email generator
     private Random random = new Random();
     private int number = random.nextInt(100000);

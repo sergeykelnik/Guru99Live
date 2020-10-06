@@ -10,27 +10,52 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1186" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
+  <component name="ProjectId" id="1iVCMET1b7zOiZfzDzTuc4o83tn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.19767442" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="TestNG.D:/IDEA_workspace/HaldexUITests/testng_firefox.xml">
-    <configuration name="D:/IDEA_workspace/HaldexUITests/testng_edge.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestCase5">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Guru99Live/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Guru99Tests" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_edge.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -38,34 +63,78 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/IDEA_workspace/HaldexUITests/testng_firefox.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase1 and 6 more" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Guru99Tests" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_firefox.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="PATTERN" />
       <properties />
       <listeners />
+      <patterns>
+        <pattern testClass="TestList1.TestCase1" />
+        <pattern testClass="TestList1.TestCase2" />
+        <pattern testClass="TestList1.TestCase3" />
+        <pattern testClass="TestList1.TestCase4" />
+        <pattern testClass="TestList1.TestCase5" />
+        <pattern testClass="TestList1.TestCase6" />
+        <pattern testClass="TestList1.TestCase7" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCase1.SortMobilesByName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Guru99Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestList1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="TestList1" />
       <option name="MAIN_CLASS_NAME" value="TestList1.TestCase1" />
-      <option name="METHOD_NAME" value="SortMobilesByName" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCase5.ReorderProduct" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase5" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Guru99Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestList1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="TestList1" />
       <option name="MAIN_CLASS_NAME" value="TestList1.TestCase5" />
-      <option name="METHOD_NAME" value="ReorderProduct" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <patterns>
+        <pattern testClass="TestList1.TestCase1" />
+        <pattern testClass="TestList1.TestCase2" />
+        <pattern testClass="TestList1.TestCase3" />
+        <pattern testClass="TestList1.TestCase4" />
+        <pattern testClass="TestList1.TestCase5" />
+        <pattern testClass="TestList1.TestCase6" />
+        <pattern testClass="TestList1.TestCase7" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCase7" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Guru99Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestList1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestList1" />
+      <option name="MAIN_CLASS_NAME" value="TestList1.TestCase7" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -74,13 +143,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/IDEA_workspace/HaldexUITests/testng_firefox.xml" />
-        <item itemvalue="TestNG.TestCase1.SortMobilesByName" />
-        <item itemvalue="TestNG.TestCase5.ReorderProduct" />
-        <item itemvalue="TestNG.D:/IDEA_workspace/HaldexUITests/testng_edge.xml" />
+        <item itemvalue="TestNG.TestCase5" />
+        <item itemvalue="TestNG.D:/Guru99Live/testng.xml" />
+        <item itemvalue="TestNG.TestCase1 and 6 more" />
+        <item itemvalue="TestNG.TestCase1" />
+        <item itemvalue="TestNG.TestCase7" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fc1aad8e-a9e0-49ba-a506-db7d689a40be" name="Default Changelist" comment="" />
@@ -88,8 +159,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552384967255</updated>
+      <workItem from="1601983325125" duration="1988000" />
+      <workItem from="1601985355424" duration="664000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -97,22 +173,34 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601983311958">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1601983539183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601983311958" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601983311958">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601983539183" />
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601983673129">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601983311958" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601983311958">
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601983673129" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601985787649">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601983311958" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601983311958">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601985787649" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601985787649">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601983311958" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601985787649" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601985787649">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601985787649" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601985787649">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601985787649" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1601985326887">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1601985326887" />
   </component>
   <component name="masterDetails">
     <states>

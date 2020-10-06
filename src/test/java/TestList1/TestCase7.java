@@ -1,6 +1,5 @@
 package TestList1;
 
-import com.codeborne.selenide.Selenide;
 import com.opencsv.CSVReader;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -11,15 +10,11 @@ import java.io.IOException;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
-//Add listener for pdf report generation
-//@Listeners(JyperionListener.class)
-//@Listeners(CustomReporting.class)
-public class TestCase7 {
+public class TestCase7 extends BaseTest {
 
     @Test(priority = 10)
     public void GetOrderExport() {
-        System.setProperty("selenide.browser", "Chrome");
-        Selenide.clearBrowserCookies();
+
         open("http://live.guru99.com/index.php/backendlogin/");
         $("#username").setValue("user01");
         $("#login").setValue("guru99com").pressEnter();

@@ -1,21 +1,16 @@
 package TestList1;
 
-import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.*;
-//Add listener for pdf report generation
-@Listeners(JyperionListener.class)
-//@Listeners(CustomReporting.class)
-public class TestCase4 {
+
+public class TestCase4 extends BaseTest {
 
     @Test(priority = 4)
     public void CompareTwoProducts() {
-        Selenide.clearBrowserCookies();
-        open("http://live.guru99.com/");
+
         $(By.linkText("MOBILE")).click();
         $(By.tagName("select")).selectOption("Position");
 

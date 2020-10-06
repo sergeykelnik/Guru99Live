@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Guru99Live/src/test/java/TestList1/TestCase1.java">
+        <classes>
+            <class name="TestList1.TestCase1">
+                <methods>
+                    <include name="SortMobilesByName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="D:/Guru99Live/src/test/java/TestList1/TestCase2.java">
+        <classes>
+            <class name="TestList1.TestCase2">
+                <methods>
+                    <include name="VerifyPricesPdpPlp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="D:/Guru99Live/src/test/java/TestList1/TestCase3.java">
+        <classes>
+            <class name="TestList1.TestCase3">
+                <methods>
+                    <include name="AddProductsToBasket"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="D:/Guru99Live/src/test/java/TestList1/TestCase4.java">
+        <classes>
+            <class name="TestList1.TestCase4">
+                <methods>
+                    <include name="CompareTwoProducts"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="D:/Guru99Live/src/test/java/TestList1/TestCase5.java">
+        <classes>
+            <class name="TestList1.TestCase5">
+                <methods>
+                    <include name="RegisterAndAddWishList"/>
+                    <include name="LoginAndBuyWishList"/>
+                    <include name="CheckOrderAndGetPdf"/>
+                    <include name="ReorderProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="D:/Guru99Live/src/test/java/TestList1/TestCase6.java">
+        <classes>
+            <class name="TestList1.TestCase6">
+                <methods>
+                    <include name="EnterProductCoupon"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="D:/Guru99Live/src/test/java/TestList1/TestCase7.java">
+        <classes>
+            <class name="TestList1.TestCase7">
+                <methods>
+                    <include name="GetOrderExport"/>
+                    <include name="ParseCSV"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

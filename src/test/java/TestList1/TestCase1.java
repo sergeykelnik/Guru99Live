@@ -1,23 +1,17 @@
 package TestList1;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 import static org.testng.Assert.assertEquals;
-//Add listener for pdf report generation
-@Listeners(JyperionListener.class)
-//@Listeners(CustomReporting.class)
-public class TestCase1 {
+
+public class TestCase1 extends BaseTest {
 
     @Test(priority = 1)
     public void SortMobilesByName() {
-        Selenide.clearBrowserCookies();
-        open("http://live.guru99.com/");
         $(By.xpath("//h2[contains(text(),'This is demo site for')]")).shouldBe(Condition.visible);
         assertEquals(title(), "Home page");
         $(By.linkText("MOBILE")).click();
